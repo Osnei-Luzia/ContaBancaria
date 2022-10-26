@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header {
+    position: sticky;
+    top: 0;
+    height: 10%;
+
+    display: flex;
+    justify-content: flex-start;
+
+    color:white;
+    background-color:#3A1772;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+main {
+    height:  100%;
+    background-color: white;
+}
+footer {
+    bottom:0px;
+    height:  20%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    color:white;
+    background-color:#475898;
+}
+footer .socialLinks a{
+    color: white;
+}
