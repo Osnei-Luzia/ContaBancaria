@@ -98,13 +98,23 @@ function validacaoOperacao(evento) {
     }
 }
 function saque(operacao) {
-    alert("saque")
+    if(operacao.Valor){
+        let cliente = clientes.find(operacao => operacao.Controle===clientes.ID)
+        if(cliente.Saldo>=operacao.Valor){
+            cliente.Saldo -= parseInt(operacao.Valor)
+            alert(`Saque efetuado, saldo atual: ${cliente.Saldo}`)
+        }else{
+            alert(`Saldo insuficiente, saldo atual: ${cliente.Saldo}`)
+        }
+    }else{
+        alert("Insira o valor")
+    }
 }
 function deposito(operacao) {
     if(operacao.Valor){
         let cliente = clientes.find(operacao => operacao.Controle===clientes.ID)
         cliente.Saldo += parseInt(operacao.Valor)
-        alert(`Saldo atual: ${clientes.find(operacao => operacao.Controle===clientes.ID).Saldo}`)
+        alert(`Saldo atual: ${cliente.Saldo}`)
     }else{
         alert("Insira o valor")
     }
