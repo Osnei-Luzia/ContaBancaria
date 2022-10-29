@@ -19,7 +19,7 @@ function validacao(cadastro) {
             }
         }
     }else{
-        controle = `Favor confirmar Senha`
+        controle = `Favo(00)02000-0002r confirmar Senha`
     }
 
     if(controle){
@@ -56,5 +56,13 @@ function cadastrar(evento) {
     }
     validacao(cadastro)
 }
+function disable(evento){
+    if(document.getElementById("operacaoSelect").value=="saldo"){
+        document.getElementById("operacaoValor").disabled = true;
+    }else{
+        document.getElementById("operacaoValor").disabled = false;
+    }
+}
 
 document.getElementById("cadastro").addEventListener("submit", cadastrar)
+document.getElementById("operacao").addEventListener("change", disable)

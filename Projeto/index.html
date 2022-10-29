@@ -22,7 +22,7 @@
 
     <main>
         <div class="mainContent">
-            <div class="divForm">
+            <!-- <div class="divForm">
                 <h2>Login</h2>
                 <form id="login">
                     <label> Usuário: </label>
@@ -31,10 +31,10 @@
                     <input type="password">
                     <div>
                         <button type="submit" >Login</button>
-                        <button type="reset">Cadastrar</button>
+                        <button>Cadastrar</button>
                     </div>
                 </form>
-            </div>
+            </div> -->
             
             <div class="divForm">
                 <h2>Cadastro</h2>
@@ -57,6 +57,29 @@
                         <button type="submit" >Cadastrar</button>
                         <button type="reset">Limpar</button>
                     </div>    
+                </form>
+            </div>
+
+            <div class="divForm">
+                <h2>Operações</h2>
+                <form id="operacao">
+                    <label for="usuario"> Usuário: </label>
+                    <input for="usuario" type="text" required>
+                    <label for="senha"> Senha: </label>
+                    <input for="senha" type="password" required>
+                    <label for="operacao"> Operação: </label>
+                    <select for="operacao" id="operacaoSelect">
+                        <option value="">Selecione uma operação</option>
+                        <option value="saque">Saque</option>
+                        <option value="deposito">Depósito</option>
+                        <option value="saldo">Saldo</option>
+                    </select>
+                    <label for="valor"> Valor: </label>
+                    <input for="valor" type="text" id="operacaoValor">
+                    <div>
+                        <button type="submit" >Confirmar</button>
+                        <button type="reset">Limpar</button>
+                    </div>
                 </form>
             </div>
         </div>
