@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     width: 100vw;
     height: 100vh;
@@ -7,38 +7,105 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
+
 header {
     position: sticky;
     top: 0;
-    height: 10%;
+    /* height: 10%; */
 
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 
-    color:white;
-    background-color:#3A1772;
+    color: white;
+    background-color: #3A1772;
 }
-header .logo{
+
+header .logo {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2%;
 }
+
 main {
-    height:  100%;
-    background-color: white;
+    height: 100%;
+    background-color: #94B9AF;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.mainContent {
+    height: 100%;
+    width: 80%;
+    margin: 2%;
+    padding: 2%;
+    background-color: #F2F7F5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divForm {
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divForm form {
+    width: 60%;
+    border-style: solid;
+    padding: 1%;
+
+    color: #3A1772;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.divForm form label {
+    padding: 1%;
+}
+
+.divForm form div {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.divForm form > input {
+    padding: 1%;
+}
+.alert{
+    color: red;
+}
+
 footer {
-    bottom:0px;
-    height:  20%;
+    bottom: 0;
+    /* height: 20%; */
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    color:white;
-    background-color:#475898;
+    background-color: #475898;
 }
-footer .socialLinks a{
+
+footer div {
+    color: white;
+}
+
+.socialLinks a {
+    padding: 1%;
     color: white;
 }

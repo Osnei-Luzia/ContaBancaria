@@ -21,15 +21,53 @@
     </header>
 
     <main>
-        
+        <div class="mainContent">
+            <div class="divForm">
+                <h2>Login</h2>
+                <form id="login">
+                    <label> Usuário: </label>
+                    <input type="text">
+                    <label> Senha: </label>
+                    <input type="password">
+                    <div>
+                        <button type="submit" >Login</button>
+                        <button type="reset">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="divForm">
+                <h2>Cadastro</h2>
+                <form id="cadastro">
+                    <label for="nome">Nome: </label>
+                    <input for="nome" id="nome" type="text" placeholder="Nome Sobrenome" required>
+
+                    <label for="CPF">CPF: </label>
+                    <input for="CPF" id="cpf" type="text" placeholder="000.000.000-00" required pattern="[0-9]{3}[\.][0-9]{3}[\.][0-9]{3}[-][0-9]{2}">
+
+                    <label for="celular">Celular: </label>
+                    <input for="celular" id="celular" type="text" placeholder="(00)00000-0000" required pattern="[(][0-9]{2}[)][0-9]{5}[-][0-9]{4}">
+
+                    <label for="senha">Senha: </label>
+                    <input for="senha" id="senha" type="password" required>
+
+                    <label for="confSenha">Confirmar senha: </label>
+                    <input for="confSenha" type="password" id="confSenha" required>
+                    <div>
+                        <button type="submit" >Cadastrar</button>
+                        <button type="reset">Limpar</button>
+                    </div>    
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer>
         <div>
             <nav class="socialLinks">
                 <img> <a href="facebook" rel="noopener" target="blank" >facebookImg</a>
-                <img> <a href="facebook" rel="noopener" target="blank" >twitterImg</a>
-                <img> <a href="facebook" rel="noopener" target="blank" >instaImg</a>
+                <img> <a href="twitter" rel="noopener" target="blank" >twitterImg</a>
+                <img> <a href="instagram" rel="noopener" target="blank" >instaImg</a>
             </nav>
             <nav>
                 <!--serviços-->
