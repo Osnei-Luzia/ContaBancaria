@@ -24,38 +24,38 @@
         <div class="mainContent">
             <div class="divForm">
                 <h2>Login</h2>
-                <form id="form">
+                <form id="login">
                     <label> Usuário: </label>
                     <input type="text">
                     <label> Senha: </label>
-                    <input type="text">
+                    <input type="password">
                     <div>
-                        <input type="submit" value="Login">
-                        <input type="button" value="Cadastrar">
+                        <button type="submit" >Login</button>
+                        <button type="reset">Cadastrar</button>
                     </div>
                 </form>
             </div>
             
             <div class="divForm">
                 <h2>Cadastro</h2>
-                <form id="form">
+                <form id="cadastro">
                     <label for="nome">Nome: </label>
-                    <input for="nome" type="text">
+                    <input for="nome" id="nome" type="text" placeholder="Nome Sobrenome" required>
 
                     <label for="CPF">CPF: </label>
-                    <input for="CPF" type="text">
+                    <input for="CPF" id="cpf" type="text" placeholder="000.000.000-00" required pattern="[0-9]{3}[\.][0-9]{3}[\.][0-9]{3}[-][0-9]{2}">
 
                     <label for="celular">Celular: </label>
-                    <input for="celular" type="text">
+                    <input for="celular" id="celular" type="text" placeholder="(00)00000-0000" required pattern="[(][0-9]{2}[)][0-9]{5}[-][0-9]{4}">
 
                     <label for="senha">Senha: </label>
-                    <input for="senha" type="text">
+                    <input for="senha" id="senha" type="password" required>
 
                     <label for="confSenha">Confirmar senha: </label>
-                    <input for="confSenha" type="text">
+                    <input for="confSenha" type="password" id="confSenha" required>
                     <div>
-                        <input type="submit" value="Cadastrar">
-                        <input type="button" value="Limpar">
+                        <button type="submit" >Cadastrar</button>
+                        <button type="reset">Limpar</button>
                     </div>    
                 </form>
             </div>
