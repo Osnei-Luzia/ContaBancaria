@@ -101,7 +101,13 @@ function saque(operacao) {
     alert("saque")
 }
 function deposito(operacao) {
-    alert("deposito")
+    if(operacao.Valor){
+        let cliente = clientes.find(operacao => operacao.Controle===clientes.ID)
+        cliente.Saldo += parseInt(operacao.Valor)
+        alert(`Saldo atual: ${clientes.find(operacao => operacao.Controle===clientes.ID).Saldo}`)
+    }else{
+        alert("Insira o valor")
+    }
 }
 function saldo(operacao) {
     alert(`Saldo atual: ${clientes.find(operacao => operacao.Controle===clientes.ID).Saldo}`)
