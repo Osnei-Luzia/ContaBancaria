@@ -48,8 +48,8 @@
                     <label for="celular">Celular: </label>
                     <input for="celular" id="celular" type="text" placeholder="(00)00000-0000" required pattern="[(][0-9]{2}[)][0-9]{5}[-][0-9]{4}">
 
-                    <label for="senha">Senha: </label>
-                    <input for="senha" id="senha" type="password" required>
+                    <label for="cadastroSenha">Senha: </label>
+                    <input for="cadastroSenha" id="cadastroSenha" type="password" required>
 
                     <label for="confSenha">Confirmar senha: </label>
                     <input for="confSenha" type="password" id="confSenha" required>
@@ -64,11 +64,11 @@
                 <h2>Operações</h2>
                 <form id="operacao">
                     <label for="usuario"> Usuário: </label>
-                    <input for="usuario" type="text" required>
-                    <label for="senha"> Senha: </label>
-                    <input for="senha" type="password" required>
+                    <input for="usuario" id="usuario" type="text" required>
+                    <label for="operacaoSenha"> Senha: </label>
+                    <input for="operacaoSenha" id="operacaoSenha" type="password" required>
                     <label for="operacao"> Operação: </label>
-                    <select for="operacao" id="operacaoSelect">
+                    <select for="operacao" id="operacaoSelect" required>
                         <option value="">Selecione uma operação</option>
                         <option value="saque">Saque</option>
                         <option value="deposito">Depósito</option>
